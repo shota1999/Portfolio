@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Inter&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;1,300&family=Lobster&family=Roboto&family=Roboto+Mono&family=Ubuntu&display=swap");
+
+.text {
+  width: 1000px;
+  margin-bottom: 3rem;
+  color: #9c9ea1;
+  font-family: "Roboto";
+  letter-spacing: 0.3px;
+
+  a {
+    text-decoration: none;
+    color: white;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

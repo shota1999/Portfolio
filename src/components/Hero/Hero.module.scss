@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Inter&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;1,300&family=Lobster&family=Roboto&family=Roboto+Mono&family=Ubuntu&display=swap');
+
+$spanGradient: linear-gradient(
+  to right,
+  #8f5fd5,
+  #7b6ad4,
+  #7074cf,
+  #6579d2,
+  #4d89d0,
+  #4090cd,
+  #22a2c9,
+  #14aac5
+);
+
+.container {
+  display: flex;
+  margin-top: 4rem;
+  gap: 10rem;
+
+  .title {
+    font-size: 40px;
+    span {
+      background: $spanGradient;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+  .text {
+    width: 500px;
+    margin-bottom: 3rem;
+    color: #9c9ea1;
+    font-family: "roboto";
+  }
+}
+.right {
+  position: relative;
+}
+.cv {
+  height: 350px;
+  width: 300px;
+  filter: blur(3px);
+}
+.btn {
+  left: 30%;
+  top: 40%;
+  position: absolute;
+  z-index: 1;
+}

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;1,300&family=Lobster&family=Ubuntu&display=swap");
+$spanGradient: linear-gradient(
+  to right,
+  #8f5fd5,
+  #7b6ad4,
+  #7074cf,
+  #6579d2,
+  #4d89d0,
+  #4090cd,
+  #22a2c9,
+  #14aac5
+);
+.container {
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 10rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Lobster", sans-serif;
+      font-family: "Ubuntu", sans-serif;
+
+      span {
+        background: $spanGradient;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
+
+      img {
+        width: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.btn {
+    position: fixed;
+    right: 8%;
+    bottom: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+    background: linear-gradient(
+      to right,
+      #8f5fd5,
+      #7b6ad4,
+      #7074cf,
+      #6579d2,
+      #4d89d0,
+      #4090cd,
+      #22a2c9,
+      #14aac5
+    );
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .btn img {
+    width: 50px;
+    transform: rotate(-45deg);
+    transition: 0.2s ease-out;
+  }
+  
+  .btn:hover img {
+    width: 50px;
+    transform: translateY(-4px) rotate(-45deg);
+  }
+  
