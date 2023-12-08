@@ -1,7 +1,11 @@
+
+
+
+import { useMediaQuery } from "react-responsive";
 import styles from "./Navbar.module.scss";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link } from "react-scroll";
+
 
 const list = [
   {
@@ -27,25 +31,33 @@ const linkedinProfileUrl =
 const githubProfileUrl = "https://github.com/shota1999";
 
 export const Navbar = () => {
+
+  const isMobile = useMediaQuery({ query: "(max-width: 744px)" });
+
+
+
   return (
     <div className={styles.container}>
       <h2>S.B. portfolio</h2>
-      <ul>
-        {list.map((item, index) => (
-          <li key={index}>
-            <Link
-              className={styles.li}
-              to={item.id}
-              spy={true}
-              smooth={true}
-              offset={-100} 
-              duration={1000}
-            >
-              {item.li}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      {!isMobile && (
+        <ul className={styles.navMenu}>
+          {list.map((item, index) => (
+            <li key={index}>
+              <Link
+                className={styles.li}
+                to={item.id}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={1000}
+              >
+                {item.li}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+  
       <div className={styles.social}>
         <a href={linkedinProfileUrl} target="_blank" rel="noopener noreferrer">
           <FaLinkedin className={styles.icon} />
@@ -56,4 +68,5 @@ export const Navbar = () => {
       </div>
     </div>
   );
+ 
 };

@@ -1,12 +1,13 @@
 .container{
   overflow: hidden;
+
+   
 }
 .row {
     display: flex;
     align-items: center;
     gap: 4rem;
     margin-top: 2em;
-    width: 100%;
     animation: slide 40s linear infinite;   
   }
 
@@ -52,3 +53,48 @@
       transform: translateX(-100%);
     }
   }
+
+
+
+
+@media (min-width:745px) and (max-width:1440px) {
+  .container{
+    text-align: center;
+   }
+  .row{
+    animation: slide 40s linear infinite;  
+    gap: 2rem;
+  }
+  .iconWrapper{
+    svg{
+      font-size: 45px;
+    }
+}}
+
+@media (min-width:500px) and (max-width:744px) {
+  .container{
+    text-align: center;
+   }
+  .row{
+    animation: slide 20s linear infinite;  
+    gap: 1rem;
+  }
+  .iconWrapper{
+    svg{
+      font-size: 30px;
+    }
+}}
+
+@media (min-width:320px) and (max-width:499px) {
+  .container{
+   text-align: center;
+  }
+  .row{
+    animation: slide 20s linear infinite;  
+    gap: 2rem;
+  }
+  .iconWrapper{
+    svg{
+      font-size: 30px;
+    }
+}}

@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FirstJob } from "./FirstJob";
+import styles from "./Experience.module.scss"
 
 type SliderSettings = {
   infinite: boolean;
@@ -23,7 +24,7 @@ export const Experience = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <h2> Experience</h2>
       <Slider {...settings}>
         <FirstJob />

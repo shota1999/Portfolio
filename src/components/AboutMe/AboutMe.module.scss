@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Inter&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;1,300&family=Lobster&family=Roboto&family=Roboto+Mono&family=Ubuntu&display=swap");
 
 .text {
-  width: 1000px;
+  width: 70%;;
   margin-bottom: 3rem;
   color: #9c9ea1;
   font-family: "Roboto";
@@ -13,6 +13,16 @@
     
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+
+@media(min-width:320px) and (max-width:744px) {
+  .container{
+    text-align: center;
+    .text{
+      width: 100%;
     }
   }
 }

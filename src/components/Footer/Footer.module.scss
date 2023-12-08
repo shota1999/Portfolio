@@ -19,7 +19,6 @@ $spanGradient: linear-gradient(
     li {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
       font-family: "Josefin Sans", sans-serif;
       font-family: "Lobster", sans-serif;
       font-family: "Ubuntu", sans-serif;
@@ -36,4 +35,17 @@ $spanGradient: linear-gradient(
       }
     }
   }
+}
+
+@media(min-width:320px) and (max-width:743px) {
+ .container{
+  ul{
+    display: flex;
+    gap: 4rem;
+    li{
+      font-size: 14px;
+    }
+  }
+ 
+ }
 }

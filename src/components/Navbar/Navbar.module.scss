@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   margin-top: 1.5em;
 
   h2 {
@@ -25,18 +26,50 @@
       }
     }
   }
+  .social {
+    display: flex;
+    gap: 1rem;
+    a {
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        color: #d0d2d2;
+      }
+    }
+  }
 }
 
-.social {
-  display: flex;
-  gap: 1rem;
-  a {
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-    &:hover {
-      color: #d0d2d2;
+
+
+@media (min-width: 745px) and (max-width: 1440px) {
+  .container {
+  margin-left: -2rem;
+    ul{
+     gap: 4rem;
+     margin-left: 3rem;
+     align-items: center;
+    
+     .li{
+      font-size: 18px;
+      
+     }
     }
+   .social{
+    margin-left: 3rem;
+    a{
+      font-size: 30px;
+    }
+   }
+  }
+}
+@media (min-width: 320px) and (max-width: 744px) {
+  .container {
+   .social{
+    a{
+      font-size: 20px;
+    }
+   }
   }
 }

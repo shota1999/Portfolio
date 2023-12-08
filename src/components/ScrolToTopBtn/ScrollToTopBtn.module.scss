@@ -34,3 +34,20 @@
     transform: translateY(-4px) rotate(-45deg);
   }
   
+  
+  @media(min-width:745px) and (max-width:1440px) {
+    .btn{
+      right: 2%;
+    }
+    .btn img {
+      width: 45px;
+    }
+  }
+  @media(min-width:320px) and (max-width:744px) {
+    .btn{
+      right: 1%;
+    }
+    .btn img {
+      width: 30px;
+    }
+  }
