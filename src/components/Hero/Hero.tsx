@@ -1,7 +1,7 @@
 import styles from "./Hero.module.scss";
 import { Button } from "../Button/Button";
 import cv from "../../assets/imgs/CV.png";
-import resume from "../../assets/imgs/Resume.pdf";
+import resume from "../../assets/imgs/resume.pdf"
 
 export const Hero = () => {
   const openPdf = () => {
@@ -12,7 +12,7 @@ export const Hero = () => {
     <div className={styles.container}>
       <div className={styles.left}>
         <h2 className={styles.title}>
-          <span>Hello,I'm Shota,</span> <br /> frontend developer
+          <span>Hello, I'm Shota,</span> <br /> frontend developer
         </h2>
         <p className={styles.text}>
           a passionate front-end developer with a keen eye for design and a love
