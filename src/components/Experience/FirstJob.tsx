@@ -19,6 +19,7 @@ export const FirstJob = () => {
                 <li>Scss</li>
                 <li>React Hooks</li>
                 <li>Bootstrap</li>
+                <li>Typescript</li>
             </ul>
         </div>
     </div>
